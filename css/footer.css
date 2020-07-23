@@ -1,0 +1,139 @@
+.footer {
+    line-height: 32px;
+
+    margin-bottom: 0;
+    padding: 46px 0 5px 0;
+
+    color: #fff;
+    background-color: #00122f;
+}
+
+.footerlist1 {
+    
+
+    
+    padding: 0;
+
+    column-count: 2;
+    column-gap: 40px;
+}
+
+.footerlist3 {
+    display: inline-block;
+
+    margin-top: 13px;
+    padding-left: 0;
+}
+
+.footerlist4 {
+    
+
+    margin-top: 10px;
+
+    color: white;
+}
+
+.social-list {
+    padding: 0;
+
+    column-count: 4;
+    column-gap: 21px;
+}
+
+.social-vk {
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+
+    border: solid 1px #fff;
+    border-radius: 50%;
+    background: url(../img/vk_log.png) no-repeat 50% 50%;
+}
+
+.social-facebook {
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+
+    border: solid 1px #fff;
+    border-radius: 50%;
+    background: url(../img/facebook_log.png) no-repeat 50% 50%;
+}
+
+.social-twitter {
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+
+    border: solid 1px #fff;
+    border-radius: 50%;
+    background: url(../img/twitter_log.png) no-repeat 50% 50%;
+}
+
+.social-instagram {
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+
+    border: solid 1px #fff;
+    border-radius: 50%;
+    background: url(../img/instagram_log.png) no-repeat 50% 50%;
+}
+
+.contacts-list {
+    line-height: 45px;
+
+    margin-top: 20px;
+    padding: 0;
+}
+
+.phone {
+    padding-left: 37px;
+
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.mail {
+    padding-left: 37px;
+
+    background-image: url(../img/mail.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.footer_text {
+    font-size: 13px;
+
+    width: 100%;
+    margin: 43px auto 10px;
+    padding: 10px;
+
+    text-align: center;
+
+    color: #8d9198;
+    border-top: solid 1px #26354e;
+}
+
+@media (max-width: 1024px) {
+    .footerlist1
+    ,
+    .footerlist2
+    ,
+    .footerlist3
+    ,
+    .footerlist4 {
+        margin: 10px 25px;
+    }
+    .footerlist3 {
+        column-count: 2;
+    }
+    .footerlist2 {
+        column-gap: 0;
+    }
+}

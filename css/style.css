@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+    min-width: 320px;
+}
+
+*
+,
+*::before
+,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+/*под проект*/
+    font-size: 16px;
+
+    margin: 0;
+
+    color: black;
+    background-color: #f9f9f9;
+
+    /*под проект*/
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+h1
+,
+h2
+,
+h3
+,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+}
+
+.clearfix::after {
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+.fixed-container {
+    /*под проект*/
+    min-width: 320px;
+    max-width: 1000px;
+
+/*под проект*/
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .container-xs {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 578px;
+
+        justify-self: center;
+        align-items: stretch;
+    }
+}

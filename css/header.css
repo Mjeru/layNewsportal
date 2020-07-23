@@ -1,0 +1,288 @@
+.bluebar {
+    font-size: 16px;
+
+    padding: 20px 0 20px 0;
+
+    color: white;
+    background-color: RGB(0, 18, 47);
+}
+
+.bluebar__container {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.headtext {
+    display: inline-block;
+}
+
+.headtext a {
+    text-decoration: underline;
+
+    color: white;
+}
+
+.header {
+    padding-bottom: 10px;
+
+    background-color: #fff;
+}
+
+.logo-container {
+    display: flex;
+
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 36px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.widgets-container {
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city_list {
+    font-size: 16px;
+
+    display: inline-block;
+
+    margin-right: 2px;
+
+    vertical-align: middle;
+
+    color: #448ccb;
+    border-bottom: 2px dashed #448ccb;
+}
+
+.city_list_arrow {
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+
+    vertical-align: middle;
+
+    background-image: url(../img/list_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search_form {
+    position: relative;
+
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+.search_input {
+    font-size: 14px;
+
+    display: inline-block;
+
+    width: 320px;
+    height: 45px;
+    padding-left: 21px;
+
+    vertical-align: middle;
+
+    border: 0;
+    border-radius: 30px;
+    background-color: #f3f3f3;
+    background-repeat: no-repeat;
+}
+
+.search_input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.search_form button {
+    position: absolute;
+    top: -3px;
+    right: 2px;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+
+    border: 0;
+    outline: none;
+    background: url(../img/search-magnifiere.png) no-repeat 50% 50%;
+}
+
+.search_input:focus {
+    border-color: #f3f3f3;
+    outline: none;
+    background-image: none;
+}
+
+.header_img1 {
+    display: inline-block;
+
+    margin-right: 55px;
+
+    vertical-align: middle;
+}
+
+.header_span {
+    display: inline-block;
+
+    margin-right: 30px;
+
+    vertical-align: middle;
+
+    color: #91919f;
+}
+
+.header_date {
+    display: inline-block;
+
+    margin-right: 30px;
+    padding-left: 25px;
+
+    vertical-align: middle;
+
+    background-image: url(../img/clock1.png);
+    background-repeat: no-repeat;
+}
+
+.header_weather {
+    display: inline-block;
+
+    margin-right: 40px;
+    padding: 2px 0 2px 39px;
+
+    vertical-align: middle;
+
+    background-image: url(../img/cloudy.png);
+    background-repeat: no-repeat;
+}
+
+.head_navigation {
+    margin-bottom: 20px;
+    padding-left: 0;
+
+    list-style: none;
+}
+
+.head_navigation li {
+    display: inline-block;
+}
+
+.head_navigation li::after {
+    margin: 0 15px;
+
+    content: '/';
+
+    color: rgb(225, 225, 229);
+}
+
+.head_navigation li:last-child::after {
+    content: '';
+}
+
+.header__logo-xs {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .bluebar__container {
+        justify-content: center;
+    }
+    .logo-container {
+        width: 100%;
+        padding: 13px 25px;
+    }
+    .city-block {
+        flex-shrink: 0;
+    }
+    .head_navigation {
+        position: relative;
+
+        margin: 0;
+    }
+    .head_navigation li:not(:last-child)::after {
+        display: block;
+
+        width: 100%;
+        height: 1px;
+        margin: 10px 0;
+
+        content: '';
+
+        color: rgb(225, 225, 229);
+        background-color: #e5e5e5;
+    }
+    .menu-slide {
+        font-size: 18px;
+
+        position: absolute;
+        z-index: 10;
+
+        display: none;
+
+        width: 100%;
+        padding: 0 25px 25px;
+
+        background-color: #fff;
+    }
+    .menu-slide li {
+        display: block;
+
+        margin: 10px;
+    }
+    .search_form {
+        display: none;
+    }
+    .headtext {
+        font-size: 13px;
+
+        text-align: center;
+    }
+    .date-time {
+        display: none;
+    }
+    .widgets-container {
+        display: none;
+    }
+    .header {
+        padding-bottom: 0;
+    }
+    .header__img-logo {
+        display: inline-block;
+    }
+    .header__logo-xs {
+        display: flex;
+
+        width: 100%;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__button-menu {
+        width: 20px;
+        height: 16px;
+
+        border: none;
+        background-color: transparent;
+        background-image: url(../img/burger.png);
+    }
+    .header__button-search {
+        width: 16px;
+        height: 16px;
+
+        border: none;
+        background-color: transparent;
+        background-image: url(../img/search-xs.png);
+    }
+}
